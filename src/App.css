@@ -1,38 +1,409 @@
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
 .App {
+  background-color: #f8f8f8;
+}
+
+
+.titrePrincipal {
+  font-family: "euroStyle", sans-serif;
+  font-size: 45px;
+  color : #141c3a;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.sousTitre {
+  font-family: sans-serif;
+  font-size: 25px;
+  color : #141c3a;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.presentationTitle {
+  padding-top: 100px;
+  font-weight: bold;
+  color: #39ff14;
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.presentation {
+  background-color: #151c3a;
+  height: 600px;
+}
+.presentation > p {
+  padding-top: 40px;
+  color: #ffffff;
+  max-width: 55%;
+  text-align: center;
+  margin : auto;
+  font-family: "europa";
+  font-size: 1.25rem !important;
+  line-height: 1.5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.navbar {
+  height: 150px;
+}
+
+.imgProfile {
+  margin-top: 40px;
+  min-height: 120px;
+  background-image: url(images/avataaars.svg);
+  background-repeat: no-repeat;
+  flex: 0 1 50%;
+}
+
+.imgDesktop {
+  margin-top: 140px;
+  height: 360px;
+  background-image: url(images/desktopMini.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.imgError {
+
+  min-height: 267px;
+  background-image: url(images/imgError.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.buttonHeader {
+  border-radius: 0.375rem;
+  background-color: #39ff14;
+  border: solid #141c3a 3px;
+  color: #151c3a;
+  text-align: center;
+  font-size: 23px;
+  font-family: "euroStyle", sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.buttonHeader span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonHeader span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonHeader:hover span {
+  padding-right: 25px;
+}
+
+.buttonHeader:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.skills {
+  background-color: #ffffff;
+  border-radius: 0.375rem;
+  width: 80%;
+  height: 600px;
+  margin : auto;
+  margin-top: -14rem;
+}
+
+.containerSkillsProgress {
+  width: 80%;
+  margin : auto
+}
+
+.iconCode {
+  background-image: url(images/iconCode.svg);
+  margin-top: 140px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: right ;
+}
+
+.labelIcon {
+  font-weight: bold;
+  font-size: 22px;
+  color: #141C3A;
+  padding-top: 30px;
+  
+}
+
+
+.progress {
+  margin-top: 20px;
+  color: #39ff14;
+}
+
+.degree {
+  margin-bottom: 50px;
+}
+.degreeTitle {
+  font-family: "euroStyle", sans-serif;
+  font-size: 60px;
+  color : #141c3a;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 100px;
+}
+
+
+.cardDegree {
+  border : solid 3px #141C3A;
+  border-radius: 0.375rem;
+  height: 150px;
+  font-weight: bold;
+  color: #141C3A;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.projectTitle {
+  font-family: "euroStyle", sans-serif;
+  font-size: 60px;
+  color : #141c3a;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  margin-bottom : 25px;
+}
+
+.project {
+  border-top : solid rgb(230, 236, 248) 1px;
+}
+
+/* Page projet */
+
+
+.card {
+  margin-top: 30px;
+}
+
+
+.iconProgramming {
+  width: 50px;
+  height: 50px;
+  background-image: url(images/programming.svg);
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 39px;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.badge span {
+  background-color: #141C3A;
+  width: 100px;
+  height: 30px;
+  padding-bottom: 3px;
+  border-radius: 0.375rem;
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.imgProjetReact {
+  background-image: url(images/projet2emeAnnee.png);
+  width: auto;
+  height: 420px;
+  background-size: cover;
+
+}
+
+.imgProjetApi {
+  background-image: url(images/rest-api.png);
+  width: 430px;
+  height: 350px;
+  margin: auto;
+  background-size: cover;
+}
+
+.imgProjetReactNative {
+  background-image: url(images/Mobile.PNG);
+  width: 170px;
+  height: 360px;
+  margin: auto;
+  background-size: cover;
+}
+
+.imgProjetNextApp {
+  background-image: url(images/projetNextApp.png);
+  width: 550px;
+  height: 350px;
+  margin: auto;
+  background-size: cover;
+}
+
+.imgProjetSilac {
+  background-image: url(images/projetSilac.png);
+  width: auto;
+  height: 300px;
+  background-size: cover;
+}
+
+.discutTitle {
+  max-width: 700px;
+  margin: auto;
+  font-size: 40px;
+  color : #141c3a;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 100px;
+}
+
+
+.contactBtn {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  border: 3px solid #141C3A;
+  padding-bottom: 3px;
+  border-radius: 0.375rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.errorBtn {
+  width: 300px;
+  margin: auto;
+  margin-top: 100px;
+  border: 3px solid #141C3A;
+  padding-bottom: 3px;
+  border-radius: 0.375rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+
+.footer-container {
+  width: 100%;
+  height:10% ;
+  background-color: #141C3A;
+  margin-top: 100px;
+  padding-bottom: 10%;
+  padding-top: 50px;
+  
+}
+
+.footer-container p {
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+.contactTitle {
+  font-family: "euroStyle", sans-serif;
+  font-size: 45px;
+  color : #141c3a;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.contactForm {
+  width: 50%;
+  margin: auto;
+
+}
+
+
+.containerError {
+    width:100%;
+    height:100vh;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 768px) {
+  .imgProjetReact {
+      height: 220px;
   }
-  to {
-    transform: rotate(360deg);
+  .imgProjetNextApp {
+    width: 450px;
+    height: 300px;
+    margin : 0px;
   }
+  .imgProjetSilac {
+    height: 150px;
+  }
+
+  .imgDesktop {
+    margin-top: 0px;
+  }
+  .centerDivTextDegree {
+    padding : 40px;
+  }
+  .cardDegree {
+    margin-bottom : 20px;
+  }
+
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+/* @media screen and (max-width: 680px) {
+  .imgDesktop {
+    margin-top: 0px;
+  }
+  .centerDivTextDegree {
+    padding : 40px;
+  }
+  .cardDegree {
+    margin-bottom : 20px;
+  }
+} */
+
+@font-face {
+  font-family: "euroStyle";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/euroStyle.ttf") format("truetype");
 }
