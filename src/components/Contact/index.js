@@ -59,7 +59,7 @@ const Contact = () => {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <div><label style={{marginBottom:'10px', color:'#727885'}}>Nom</label></div>
+                            <div><label style={{marginBottom:'10px', color:'#727885'}}>Name</label></div>
                             <input style={{width:'100%', padding:'10px', border: 'none'}} type='text' name="name" id="name" required/>
                         </Col>
 
@@ -72,7 +72,7 @@ const Contact = () => {
                             <div><label style={{marginBottom:'10px', color:'#727885'}}>Message</label></div>
                             <textarea style={{width:'100%', height: '200px', border:'none'}} name="message" type='text' id="mesage" required/>
                         </Col>
-                        <button type="submit" className="contactBtn"  style={{width:'200px', marginTop:'50px', marginBottom:'200px'}} >Envoyer</button>
+                        <button type="submit" className="contactBtn"  style={{width:'200px', marginTop:'50px', marginBottom:'200px'}} >Send</button>
                     </Row>
                 </Container>
             </form>        
