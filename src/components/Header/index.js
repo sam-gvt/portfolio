@@ -16,7 +16,7 @@ const Header = () => {
                 
                 <a href={cv} target="_blank" 
                     rel="noreferrer">
-                    <button className="buttonHeader" style={{marginRight: '54px'}}><span>Mon CV</span></button>
+                    <button className="buttonHeader" style={{marginRight: '54px'}}><span>My CV</span></button>
                 </a>
                 
                
