@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-container">
-                <p>© 2023 Sam GRANDVINCENT, Tous droits réservés.</p>
+                <p>© 2023 Sam GRANDVINCENT, All rights reserved.</p>
             </div>  
         </footer>
     );

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4dd7a4c5.css",
+    "main.js": "/static/js/main.65829d9b.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/projet2emeAnnee.png": "/static/media/projet2emeAnnee.48af8c03d4f87bfd8c0a.png",
+    "static/media/projetSilac.png": "/static/media/projetSilac.654dbbe32b56715a6b33.png",
+    "static/media/Mobile.PNG": "/static/media/Mobile.8524b74908edc9da6ca7.PNG",
+    "static/media/projetNextApp.png": "/static/media/projetNextApp.9c7b85c167998cf18325.png",
+    "static/media/CV_Sam_Grandvincent.pdf": "/static/media/CV_Sam_Grandvincent.91d324230641b9f011a7.pdf",
+    "static/media/euroStyle.ttf": "/static/media/euroStyle.484dfcabae8f37b92ef4.ttf",
+    "static/media/desktopMini.svg": "/static/media/desktopMini.33dde3f786675369c366.svg",
+    "static/media/avataaars.svg": "/static/media/avataaars.5e55cfd3505186b64308.svg",
+    "static/media/imgError.svg": "/static/media/imgError.b6190833377dad501448.svg",
+    "static/media/programming.svg": "/static/media/programming.eddbb234f4bb856ca954.svg",
+    "static/media/iconCode.svg": "/static/media/iconCode.ddf806ef140674c3184b.svg",
+    "index.html": "/index.html",
+    "main.4dd7a4c5.css.map": "/static/css/main.4dd7a4c5.css.map",
+    "main.65829d9b.js.map": "/static/js/main.65829d9b.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dd7a4c5.css",
+    "static/js/main.65829d9b.js"
+  ]
+}

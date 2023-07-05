@@ -1,72 +1,110 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import {Row, Col, Container} from 'react-bootstrap';
-
+import fleche from '../../images/caret-right.svg';
 
 const ModalProject = ({indexModal, removeModal}) => {
 
 
     const infosModal = [
+
         {
-            title : 'Application Web - Ecommerce de café',
+            title : 'Web3 Democratic vote',
+            techno : ['Solidity', 'NextJS', 'ChakraUi', 'Wagmi' ],
+            features : [
+                'Deploy on Goerli & Hardhat network',
+                'Authorization levels (admin, voter, visitor)',
+                'Register Voter',
+                'Change workflow status',
+                'Send proposals',
+                'Vote for a proposal',
+                'Get the winning proposal'  
+            ],
+            img : [
+                'imgConnectWalletVote',
+                'imgRegisterVoter'
+            ]
+        },
+        {
+            title : 'Web3 Dao charitable donation',
+            techno : ['Solidity', 'NextJS', 'ChakraUi', 'Wagmi' ],
+            features : [
+                'Authorization levels (admin, voter, visitor)',  
+            ],
+            img : [
+                
+            ]
+        },
+        {
+            title : 'Web Application - Ecommerce coffee',
             techno : ['React', 'Bootstrap', 'Axios' ],
             features : [
-                'Inscription / Connexion',
-                'Niveaux d\'autorisations (admin, redacteur, consommateur)',
-                'Gestion du catalogue (CRUD)',
-                'Panier',
-                'Suivi de commande',
-                'Espace Commentaire',
+                'Registration / Login',
+                'Authorization levels (admin, redactor, consumer)',
+                'Catalog management (CRUD)',
+                'Shopping cart',
+                'Order tracking',
+                'Comment area',
                 'Newsletter'
             ],
-            img : 'imgProjetReact',
+            img : ['imgProjetReact'],
         },
         {
-            title : 'API Rest',
+            title : 'Rest API',
             techno : ['Symfony', 'Sql'],
             features : [
-                'Contrôle d\'accès via le JWT token',
-                'Fourni une interface complète pour gérer le catalogue'
+                'Access control via JWT token',
+                'Provides a complete interface to manage the catalog.'
             ],
-            img : 'imgProjetApi'
+            img : ['imgProjetApi']
         },
         {
-            title : 'Application Mobile, pour des serveurs de cafés',
+            title : 'Mobile Application, for coffee waiters',
             techno : ['React Native', 'Bootstrap', 'Axios'],
             features : [
-                'Inscription / Connexion',
-                'Gestion des états des commandes',
-                'Liste des commandes',
-                'Détails des commandes',
-                'Déconnexion'
+                'Registration / Login',
+                'Order status management',
+                'Order list',
+                'Order details',
+                'Logout'
             ],
-            img : 'imgProjetReactNative'
+            img : ['imgProjetReactNative']
         },
         {
-            title : 'Application bureau Windows, exécutant des requêtes Sql à interval souhaité afin d\'envoyer la réponse à son serveur',
+            title : 'Windows desktop application, executing Sql queries at the desired interval in order to send the response to its server',
             techno : ['C#', '.Net'],
             features : [
-                'Connexion à sa BDD',
-                'Connexion FTP/SFTP',
-                'Espace création de requête',
-                'Espace planification tâche',
-                'Espace suppression tâche',
+                'DB connection',
+                'FTP/SFTP connection',
+                'Query creation area',
+                'Job scheduling area',
+                'Job delete area',
             ],
-            img : 'imgProjetNextApp'
+            img : ['imgProjetNextApp']
         },
         {
-            title : 'Application Web intranet, pour gérer les visiteurs de l\'entreprise',
+            title : 'Intranet Web application to manage company visitors',
             techno : ['PHP', 'Bootstrap', 'Sql'],
             features : [
-                'Espace Visiteur',
-                'Espace Administrateur',
-                '3 Niveaux d\'autorisations admin',
-                'Gestion des utilisateurs (crud)',
-                'Gestion des visites (crud)'
+                'Visitor Area',
+                'Administrator Area',
+                '3 levels of admin permissions',
+                'User management (crud)',
+                'Visit management (crud)'
             ],
-            img : 'imgProjetSilac'
+            img : ['imgProjetSilac']
         }
     ]
+
+    const [indexImage, setIndexImage] = useState(0);
+    const handleClick = () => {
+        if(indexImage == 0) {
+            setIndexImage(1)
+        } else {
+            setIndexImage(0)
+        }
+        
+    }
 
     return (
     
@@ -83,7 +121,17 @@ const ModalProject = ({indexModal, removeModal}) => {
         </Modal.Header>
         <Modal.Body className="show-grid" style={{backgroundColor:'#f8f8f8'}}>
 
-                <div className={infosModal[indexModal].img} />
+                <div className={infosModal[indexModal].img[indexImage]} />
+                <div style={{textAlign:'center', marginTop:'5px'}}>
+                    { (infosModal[indexModal].img.length > 1) && (
+                        <button onClick={handleClick} className="btn btn-md btn-custom"  style={{backgroundColor:'none',border:'2px solid black', fontWeight:'bold'}}>
+                        Next image
+                        <img src={fleche} alt="Image SVG" />
+                    </button> 
+                    )}
+                    
+                </div>
+               
                 <Container>
                 <Row>
                 <Col md={4}>
@@ -100,7 +148,7 @@ const ModalProject = ({indexModal, removeModal}) => {
                 </Col>
                 <Col md={8}>
                     <div className='mt-4'>
-                        <span style={{fontWeight:'bold'}}>Fonctionnalités :</span>
+                        <span style={{fontWeight:'bold'}}>Features :</span>
                         <ul>
                         {
                             infosModal[indexModal].features.map((feature, index) => {

@@ -7,12 +7,13 @@ const MesTravaux = () => {
     const [indexModal, setIndexModal] = useState(0)
 
     const infoCards = [
-        ['Application Web - Ecommerce', 'React'],
-        ['API Rest', 'Symfony'],
-        ['Application Mobile', 'React Native'],
-        ['Application Bureau Windows', 'C# .Net'],
-        ['Application Web intranet', 'PHP']
-
+        ['Web3 Democratic Vote', 'Solidity NextJs'],
+        ['Web3 Dao Donation', 'Solidity NextJs'],
+        ['Web Application - Ecommerce', 'React'],
+        ['Rest API', 'Symfony'],
+        ['Mobile Application', 'React Native'],
+        ['Windows Desktop Application', 'C# .Net'],
+        ['Intranet Web Application', 'PHP'],
     ]
     
     const showModal = (index) => {
@@ -24,7 +25,7 @@ const MesTravaux = () => {
 
     return (
         <div className='project'>
-            <h2 className='projectTitle'> Mes travaux</h2>
+            <h2 className='projectTitle'> My works </h2>
 
             <div className="container">
                 <div className="row">

@@ -6,7 +6,7 @@ import Header from '../Header';
 import MesTravaux from '../MesTravaux';
 
 
-toast.warn(`Bienvenue sur mon portfolio !`, {
+toast.warn(`Welcome to my portfolio !`, {
     position: "top-right",
     autoClose: 3000,
     hideProgressBar: false,
@@ -23,53 +23,53 @@ const FirstPage = () => {
     return (
         <div>
             <Header />
-            <h1 className="titrePrincipal">Blockchain Developer, ReactJS/Solidity.</h1>
+            <h1 className="titrePrincipal">Web Developer, NextJS/Solidity.</h1>
             <ToastContainer />
-            <h2 className="sousTitre">Développeur passionné par l'univers Web 3</h2>
+            <h2 className="sousTitre">I create secure smart contracts for you and build modern Applications with frameworks like NextJs. </h2>
             <div className="imgDesktop" />
 
             <div className="presentation">
-                <h2 className="presentationTitle">Bonjour, je m'appelle Sam</h2>
+                <h2 className="presentationTitle">Hi, I'm Sam</h2>
                 <p>
-                    Passionné par l'informatique en général et plus spécifiquement par le développement d'application Web2/Web3, je travaille continuellement pour améliorer mes compétences. 
-                </p>
+                Passionate about Web2/Web3 application development, I'm constantly working to improve my skills.                </p>
             </div>
            
             <div className="skills" >
                 <div className='container' style={{paddingTop : '30px', paddingBottom : '30px'}}>
                     <div className='row'>
                         <div className="iconCode col-6" />
-                        <div className='labelIcon col-6'>Compétences techniques</div>
+                        <div className='labelIcon col-6'>Technical skills</div>
                     </div>
                 </div>
 
                 <div className='containerSkillsProgress'>
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React JS </div>
+                        style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React JS / NextJS </div>
                     </div>
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '80%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > PHP </div>
+                        style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Solidity </div>
                     </div>
    
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > HTML </div>
+                        style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > HTML / CSS </div>
                     </div>
+
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '75%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > CSS </div>
-                    </div>
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
-                        style={{width: '60%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > SQL </div>
+                        style={{width: '70%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > PHP </div>
                     </div>
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
                         style={{width: '60%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Symfony </div>
                     </div>
-
+                    <div className="progress" style={{height:'30px'}}>
+                        <div className="progress-bar" role="progressbar" 
+                        style={{width: '60%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > SQL </div>
+                    </div>
+        
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
                         style={{width: '40%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React Native </div>
@@ -87,27 +87,24 @@ const FirstPage = () => {
                 <h2 className='degreeTitle'> Certifications </h2>
                 <div className='container' style={{marginTop : '45px'}}>
                     <div className='row'>
-                        <div className="col-md-4" style={{backgroundColor: '#f8f8f8', border: 'none'}}>
+                        <div className="col-md-6" style={{backgroundColor: '#f8f8f8', border: 'none'}}>
                             <div className="card-body cardDegree">
-                                <div className='centerDivTextDegree'>
-                                    BTS Services informatiques aux organisations option développement
+                                <div className='centerDivTextDegree' style={{paddingTop:'20px'}}>
+                                     "BTS Services informatiques aux organisations option développement" <br/>
+                                    <span style={{fontSize: '15px'}}>(Two-year post-secondary IT degree)</span>
+                                   
                                 </div>
                             
                             </div>
                         </div>
-                        <div className="col-md-4" style={{backgroundColor: '#f8f8f8', border: 'none'}}>
-                            <div className="card-body cardDegree">
-                                <div className='centerDivTextDegree'>Ecole Alyra 
-                                parcours développeur blockchain</div>
+                        <div className="col-md-6" style={{backgroundColor: '#f8f8f8', border: 'none'}}>
+                            <div className="card-body cardDegree" >
+                                <div className='centerDivTextDegree' style={{paddingTop:'20px'}}>"Ecole Alyra 
+                                parcours développeur blockchain"</div>
+                                <span style={{fontSize: '15px'}}>(Web3 specialized certification)</span>
                             </div>
                         </div>
-                        <div className="col-md-4" style={{backgroundColor: '#f8f8f8', border: 'none'}}>
-                            <div className="card-body cardDegree">
-                                <div className='centerDivTextDegree'>
-                                    Udemy <br/>  Formation complète React
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>  
                 </div>
 
@@ -115,10 +112,10 @@ const FirstPage = () => {
             <MesTravaux/>
   
             <div className='discutTitle' style={{marginTop:'150px'}}>
-               <span>Intéréssé pour travailler ensemble ?</span>    
+               <span>Interested in working together ?</span>    
             </div>
             <Link to='/contact'  style={{textDecoration:'none', color:'#ffffff'}}>
-                <div className='contactBtn' style={{backgroundColor:'#141C3A'}}> Discutons-en </div>
+                <div className='contactBtn' style={{backgroundColor:'#141C3A'}}> Let's discuss </div>
             </Link> 
             
 
