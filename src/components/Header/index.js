@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
-import cv from '../../images/CV_Sam_Grandvincent.pdf'
+import cv from '../../images/CV_English_Sam_Grandvincent.pdf'
 
 
 const Header = () => {
