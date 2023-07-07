@@ -29,7 +29,7 @@ const ModalProject = ({indexModal, removeModal}) => {
             title : 'Web3 Dao charitable donation',
             techno : ['Solidity', 'NextJS', 'ChakraUi', 'Wagmi' ],
             features : [
-                'Authorization levels (admin, voter, visitor)',  
+                'Project in Development...',  
             ],
             img : [
                 
