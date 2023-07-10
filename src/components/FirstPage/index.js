@@ -59,7 +59,7 @@ const FirstPage = () => {
 
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '70%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > PHP </div>
+                        style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > PHP </div>
                     </div>
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
