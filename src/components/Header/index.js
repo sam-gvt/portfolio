@@ -16,7 +16,7 @@ const Header = () => {
                 
                 <a href={cv} target="_blank" 
                     rel="noreferrer">
-                    <button className="buttonHeader buttonRight"><span>My Resume</span></button>
+                    <button className="buttonHeader buttonRight"><span>Resume</span></button>
                 </a>
                 
                
