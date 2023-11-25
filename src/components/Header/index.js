@@ -11,12 +11,12 @@ const Header = () => {
         <Fragment>
             <nav className="navbar bg-body-tertiary">
                 <Link className="navbar-brand" to="/contact">
-                    <button className="buttonHeader" style={{marginLeft: '54px'}}><span>Contact</span></button>
+                    <button className="buttonHeader buttonLeft"><span>Contact</span></button>
                 </Link>
                 
                 <a href={cv} target="_blank" 
                     rel="noreferrer">
-                    <button className="buttonHeader" style={{marginRight: '54px'}}><span>My Resume</span></button>
+                    <button className="buttonHeader buttonRight"><span>My Resume</span></button>
                 </a>
                 
                
