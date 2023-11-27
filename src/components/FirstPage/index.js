@@ -23,9 +23,9 @@ const FirstPage = () => {
     return (
         <div>
             <Header />
-            <h1 className="titrePrincipal">Web Developer, NextJS/Solidity.</h1>
+            <h1 className="titrePrincipal">Web Developer, NextJS/Solidity/PHP.</h1>
             <ToastContainer />
-            <h2 className="sousTitre">I create secure smart contracts for you and build modern Applications with frameworks like NextJs. </h2>
+            <h2 className="sousTitre">I build modern Applications with frameworks like NextJs. </h2>
             <div className="imgDesktop" />
 
             <div className="presentation">
