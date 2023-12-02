@@ -9,6 +9,17 @@ const ModalProject = ({indexModal, removeModal}) => {
     const infosModal = [
 
         {
+            title : 'Tesla copy',
+            techno : ['Tailwind Css'],
+            features : [
+                'mobile adapter',
+                'showcase site'
+            ],
+            img : [
+                'imgTesla'
+            ]
+        },
+        {
             title : 'Web3 Democratic vote',
             techno : ['Solidity', 'NextJS', 'ChakraUi', 'Wagmi' ],
             features : [

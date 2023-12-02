@@ -249,6 +249,13 @@ h2 {
   align-items: center
 }
 
+.imgTesla {
+  background-image: url(images/tesla.png);
+  width: auto;
+  height: 425px;
+  background-size: cover;
+}
+
 .imgConnectWalletVote {
   background-image: url(images/connectWallet.png);
   width: auto;

@@ -7,6 +7,7 @@ const MesTravaux = () => {
     const [indexModal, setIndexModal] = useState(0)
 
     const infoCards = [
+        ['Copy of tesla website', 'Tailwind Css'],
         ['Web3 Democratic Vote', 'Solidity NextJs'],
         ['Web3 Dao Donation', 'Solidity NextJs'],
         ['Web Application - Ecommerce', 'React'],
