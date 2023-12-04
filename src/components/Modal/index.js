@@ -7,7 +7,19 @@ const ModalProject = ({indexModal, removeModal}) => {
 
 
     const infosModal = [
-
+        {
+            title : 'Instagram copy',
+            techno : ['Tailwind Css'],
+            features : [
+                'mobile adapter',
+                'showcase site'
+            ],
+            img : [
+                'imgInsta1',
+                'imgInsta3',
+                'imgInsta3',
+            ]
+        },
         {
             title : 'Tesla copy',
             techno : ['Tailwind Css'],
