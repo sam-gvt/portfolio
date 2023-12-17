@@ -23,7 +23,7 @@ const FirstPage = () => {
     return (
         <div>
             <Header />
-            <h1 className="titrePrincipal">Web Developer, NextJS/Solidity/PHP.</h1>
+            <h1 className="titrePrincipal">Web Developer, Node Js.</h1>
             <ToastContainer />
             <h2 className="sousTitre">I build modern Applications with frameworks like NextJs. </h2>
             <div className="imgDesktop" />
@@ -31,7 +31,7 @@ const FirstPage = () => {
             <div className="presentation">
                 <h2 className="presentationTitle">Hi, I'm Sam</h2>
                 <p>
-                Passionate about Web2/Web3 application development, I'm constantly working to improve my skills.                </p>
+                Passionate about Web application development, I'm constantly working to improve my skills.                </p>
             </div>
            
             <div className="skills" >
