@@ -23,9 +23,9 @@ const FirstPage = () => {
     return (
         <div>
             <Header />
-            <h1 className="titrePrincipal">Web Developer, Node Js.</h1>
+            <h1 className="titrePrincipal">Web Developer</h1>
             <ToastContainer />
-            <h2 className="sousTitre">I build modern Applications with frameworks like NextJs. </h2>
+            <h2 className="sousTitre">Django / PHP / React JS </h2>
             <div className="imgDesktop" />
 
             <div className="presentation">
@@ -45,29 +45,30 @@ const FirstPage = () => {
                 <div className='containerSkillsProgress'>
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React JS / NextJS </div>
+                        style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React JS </div>
                     </div>
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Solidity </div>
-                    </div>
-   
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
-                        style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > HTML / CSS </div>
+                        style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > HTML / CSS / JS </div>
                     </div>
 
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > PHP </div>
+                        style={{width: '90%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > PHP / Symfony </div>
                     </div>
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '60%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Symfony </div>
+                        style={{width: '90%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Django </div>
                     </div>
+
                     <div className="progress" style={{height:'30px'}}>
                         <div className="progress-bar" role="progressbar" 
-                        style={{width: '60%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > SQL </div>
+                        style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Solidity </div>
+                    </div>
+   
+                    <div className="progress" style={{height:'30px'}}>
+                        <div className="progress-bar" role="progressbar" 
+                        style={{width: '70%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > SQL / MySql </div>
                     </div>
         
                     <div className="progress" style={{height:'30px'}}>
