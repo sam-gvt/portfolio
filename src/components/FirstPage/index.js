@@ -91,8 +91,8 @@ const FirstPage = () => {
                         <div className="col-md-6" style={{backgroundColor: '#f8f8f8', border: 'none'}}>
                             <div className="card-body cardDegree">
                                 <div className='centerDivTextDegree' style={{paddingTop:'20px'}}>
-                                     "BTS Services informatiques aux organisations option développement" <br/>
-                                    <span style={{fontSize: '15px'}}>(Two-year post-secondary IT degree)</span>
+                                Advanced Diploma IT degree <br/>
+                                    <span style={{fontSize: '15px'}}>(Louis Pergaud, Besancon, France)</span>
                                    
                                 </div>
                             
@@ -100,8 +100,7 @@ const FirstPage = () => {
                         </div>
                         <div className="col-md-6" style={{backgroundColor: '#f8f8f8', border: 'none'}}>
                             <div className="card-body cardDegree" >
-                                <div className='centerDivTextDegree' style={{paddingTop:'20px'}}>"Ecole Alyra 
-                                parcours développeur blockchain"</div>
+                                <div className='centerDivTextDegree' style={{paddingTop:'20px'}}>Blockchain developer certification</div>
                                 <span style={{fontSize: '15px'}}>(Web3 specialized certification)</span>
                             </div>
                         </div>
