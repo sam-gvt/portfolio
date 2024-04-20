@@ -34,7 +34,12 @@ const FirstPage = () => {
             <img src={djangoImage}  />
                <span style={{margin: '50px'}}> Django/ React JS</span>
             <img src={reactImage}  />
-        </h2>
+         </h2>
+         <div>
+         <p>https://github.com/sam-gvt?tab=repositories</p>
+         </div>
+
+
 
 
 
