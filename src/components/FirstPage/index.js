@@ -30,13 +30,15 @@ const FirstPage = () => {
             <ToastContainer />
 
 
-         <h2 className="sousTitre" style={{marginBottom:'10%'}}>
+         <h2 className="sousTitre">
             <img src={djangoImage}  />
                <span style={{margin: '50px'}}> Django/ React JS</span>
             <img src={reactImage}  />
          </h2>
-         <div>
-         <p>https://github.com/sam-gvt?tab=repositories</p>
+         <div style={{textAlign: 'center'}}>
+            <a href='https://github.com/sam-gvt?tab=repositories' style={{marginBottom:'10%', color:'black', fontWeight:'bold'}}>
+                Github
+            </a>
          </div>
 
 
