@@ -30,7 +30,7 @@ const FirstPage = () => {
             <ToastContainer />
 
 
-         <h2 className="sousTitre">
+         <h2 className="sousTitre" style={{marginBottom:'20%'}}>
             <img src={djangoImage}  />
                <span style={{margin: '50px'}}> Django/ React JS</span>
             <img src={reactImage}  />
