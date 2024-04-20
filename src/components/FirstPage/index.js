@@ -4,6 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../Footer';
 import Header from '../Header';
 import MesTravaux from '../MesTravaux';
+import djangoImage from '../../images/django.png'
+import reactImage from '../../images/react.png'
 
 
 toast.warn(`Welcome to my portfolio !`, {
@@ -23,9 +25,20 @@ const FirstPage = () => {
     return (
         <div>
             <Header />
+
             <h1 className="titrePrincipal">Web Developer</h1>
             <ToastContainer />
-            <h2 className="sousTitre">Django / PHP / React JS </h2>
+
+
+         <h2 className="sousTitre">
+            <img src={djangoImage}  />
+               <span style={{margin: '50px'}}> Django/ React JS</span>
+            <img src={reactImage}  />
+        </h2>
+
+
+
+
             <div className="imgDesktop" />
 
             <div className="presentation">
@@ -33,7 +46,7 @@ const FirstPage = () => {
                 <p>
                 Passionate about Web application development, I'm constantly working to improve my skills.                </p>
             </div>
-           
+
             <div className="skills" >
                 <div className='container' style={{paddingTop : '30px', paddingBottom : '30px'}}>
                     <div className='row'>
@@ -44,42 +57,42 @@ const FirstPage = () => {
 
                 <div className='containerSkillsProgress'>
                     <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
+                        <div className="progress-bar" role="progressbar"
                         style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React JS </div>
                     </div>
                     <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
+                        <div className="progress-bar" role="progressbar"
                         style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > HTML / CSS / JS </div>
                     </div>
 
                     <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
+                        <div className="progress-bar" role="progressbar"
                         style={{width: '90%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > PHP / Symfony </div>
                     </div>
                     <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
+                        <div className="progress-bar" role="progressbar"
                         style={{width: '90%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Django </div>
                     </div>
 
                     <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
+                        <div className="progress-bar" role="progressbar"
                         style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Solidity </div>
                     </div>
-   
+
                     <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
+                        <div className="progress-bar" role="progressbar"
                         style={{width: '70%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > SQL / MySql </div>
                     </div>
-        
+
                     <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
+                        <div className="progress-bar" role="progressbar"
                         style={{width: '40%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React Native </div>
                     </div>
 
                     <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar" 
+                        <div className="progress-bar" role="progressbar"
                         style={{width: '30%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > C# .Net </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
 
@@ -93,9 +106,9 @@ const FirstPage = () => {
                                 <div className='centerDivTextDegree' style={{paddingTop:'20px'}}>
                                 Advanced Diploma IT degree <br/>
                                     <span style={{fontSize: '15px'}}>(Louis Pergaud, Besancon, France)</span>
-                                   
+
                                 </div>
-                            
+
                             </div>
                         </div>
                         <div className="col-md-6" style={{backgroundColor: '#f8f8f8', border: 'none'}}>
@@ -104,20 +117,20 @@ const FirstPage = () => {
                                 <span style={{fontSize: '15px'}}>(Web3 specialized certification)</span>
                             </div>
                         </div>
-                        
-                    </div>  
+
+                    </div>
                 </div>
 
             </div>
             <MesTravaux/>
-  
+
             <div className='discutTitle' style={{marginTop:'150px'}}>
-               <span>Interested in working together ?</span>    
+               <span>Interested in working together ?</span>
             </div>
             <Link to='/contact'  style={{textDecoration:'none', color:'#ffffff'}}>
                 <div className='contactBtn' style={{backgroundColor:'#141C3A'}}> Let's discuss </div>
-            </Link> 
-            
+            </Link>
+
 
             <Footer/>
 
