@@ -33,9 +33,9 @@ const FirstPage = () => {
 
 
                 <h2 className="sousTitre">
-                    <img src={djangoImage}  />
+                    <img className='imgDjango' src={djangoImage}  />
                     <span style={{margin: '50px'}}> Django/ React JS</span>
-                    <img src={reactImage}  />
+                    <img className='imgReact' src={reactImage}  />
                 </h2>
 
 
@@ -62,34 +62,36 @@ thoroughly enjoy expanding my knowledge through courses, books, and personal pro
                 </div>
 
                 <div class="containerSkills">
-                    <div class="columnSkills">
-                        <h2>Frontend</h2>
-                        <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
-                            React JS
-                        </p>
-                        <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
-                            Tailwind Css
-                        </p>
-                        <p>HTML / CSS / JS</p>
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="columnSkills">
-                        <h2>Backend</h2>
-                        <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
-                            Python / Django
-                        </p>
-                        <p>DRF (Django Rest Framework)</p>
-                        <p>PHP / Symfony (+twig/doctrine)</p>
-                    </div>
-                    <div class="columnSkills">
-                        <h2>Others</h2>
-                        <p>PostgreSQL</p>
-                        <p>Merise Database Modeling Methodology</p>
-                        <p> Design Patterns </p>
-                        <p>Git / Git Actions / Docker</p>
-                        <p>OS preference : Linux / MacOs </p>
-                        <p>Web 3 (Hardhat, Solidity)</p>
+                    <div className="row">
+                        <div class="columnSkills col-md-4">
+                            <h2>Frontend</h2>
+                            <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
+                                React JS
+                            </p>
+                            <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
+                                Tailwind Css
+                            </p>
+                            <p>HTML / CSS / JS</p>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="columnSkills col-md-4">
+                            <h2>Backend</h2>
+                            <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
+                                Python / Django
+                            </p>
+                            <p>DRF (Django Rest Framework)</p>
+                            <p>PHP / Symfony (+twig/doctrine)</p>
+                        </div>
+                        <div class="columnSkills col-md-4">
+                            <h2>Others</h2>
+                            <p>PostgreSQL</p>
+                            <p>Merise Database Modeling Methodology</p>
+                            <p> Design Patterns </p>
+                            <p>Git / Git Actions / Docker</p>
+                            <p>OS preference : Linux / MacOs </p>
+                            <p>Web 3 (Hardhat, Solidity)</p>
 
+                        </div>
                     </div>
                 </div>
             </div>

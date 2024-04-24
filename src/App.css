@@ -472,6 +472,17 @@ h2 {
     padding: 4px;
   }
 
+  .imgDjango {
+    display: none;
+  }
+
+  .imgReact {
+    display: none;
+  }
+
+  .skills {
+    height: 1000px;
+  }
 }
 
 @font-face {

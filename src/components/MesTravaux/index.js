@@ -37,7 +37,7 @@ const MesTravaux = () => {
 
     return (
         <div className='project'>
-             <h2 className='projectTitle'> My works </h2>
+             <h2 className='projectTitle'> My projects </h2>
             <div className="container">
                 <div className="row">
 
@@ -68,7 +68,7 @@ const MesTravaux = () => {
                 </div>
             </div>
 
-            <h2 className='projectTitle'> Old works </h2>
+            <h2 className='projectTitle'> Old projects </h2>
             <div className="container">
                 <div className="row">
 
