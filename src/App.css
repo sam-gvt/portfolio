@@ -273,32 +273,6 @@ h2 {
   align-items: center
 }
 
-.imgInsta1 {
-  background-image: url(images/insta1.png);
-  width: auto;
-  height: 425px;
-  background-size: cover;
-}
-.imgInsta2 {
-  background-image: url(images/insta2.png);
-  width: auto;
-  height: 425px;
-  background-size: cover;
-}
-.imgInsta3 {
-  background-image: url(images/insta3.png);
-  width: 320px;
-  height: 390px;
-  margin: auto;
-  background-size: cover;
-}
-
-.imgTesla {
-  background-image: url(images/tesla.png);
-  width: auto;
-  height: 425px;
-  background-size: cover;
-}
 
 .imgConnectWalletVote {
   background-image: url(images/connectWallet.png);
