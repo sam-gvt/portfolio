@@ -6,6 +6,7 @@ import Header from '../Header';
 import MesTravaux from '../MesTravaux';
 import djangoImage from '../../images/django.png'
 import reactImage from '../../images/react.png'
+import trophySvg from '../../images/trophy.svg'
 
 
 toast.warn(`Welcome to my portfolio !`, {
@@ -24,29 +25,22 @@ const FirstPage = () => {
 
     return (
         <div>
-            <Header />
+            <div className='divHome'>
+                <Header />
 
-            <h1 className="titrePrincipal">Web Developer</h1>
-            <ToastContainer />
-
-
-         <h2 className="sousTitre">
-            <img src={djangoImage}  />
-               <span style={{margin: '50px'}}> Django/ React JS</span>
-            <img src={reactImage}  />
-         </h2>
-         <div style={{textAlign: 'center'}}>
-            <a href='https://github.com/sam-gvt?tab=repositories' style={{marginBottom:'10%', color:'black', fontWeight:'bold'}}>
-                Github
-            </a>
-         </div>
+                <h1 className="titrePrincipal">Web Developer</h1>
+                <ToastContainer />
 
 
+                <h2 className="sousTitre">
+                    <img src={djangoImage}  />
+                    <span style={{margin: '50px'}}> Django/ React JS</span>
+                    <img src={reactImage}  />
+                </h2>
 
 
-
-
-            <div className="imgDesktop" />
+                <div className="imgDesktop" />
+            </div>
 
             <div className="presentation">
                 <h2 className="presentationTitle">Hi, I'm Sam</h2>
@@ -62,43 +56,35 @@ const FirstPage = () => {
                     </div>
                 </div>
 
-                <div className='containerSkillsProgress'>
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar"
-                        style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React JS </div>
+                <div class="containerSkills">
+                    <div class="columnSkills">
+                        <h2>Frontend</h2>
+                        <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
+                            React JS
+                        </p>
+                        <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
+                            Tailwind Css
+                        </p>
+                        <p>HTML / CSS / JS</p>
+                        <p>Bootstrap</p>
                     </div>
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar"
-                        style={{width: '95%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > HTML / CSS / JS </div>
+                    <div class="columnSkills">
+                        <h2>Backend</h2>
+                        <p><img src={trophySvg} style={{width:'15%', paddingRight:'10px'}}/>
+                            Python / Django
+                        </p>
+                        <p>DRF (Django Rest Framework)</p>
+                        <p>PHP / Symfony (+twig/doctrine)</p>
                     </div>
+                    <div class="columnSkills">
+                        <h2>Others</h2>
+                        <p>PostgreSQL</p>
+                        <p>Merise Database Modeling Methodology</p>
+                        <p> Design Patterns </p>
+                        <p>Git / Git Actions / Docker</p>
+                        <p>OS preference : Linux / MacOs </p>
+                        <p>Web 3 (Hardhat, Solidity)</p>
 
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar"
-                        style={{width: '90%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > PHP / Symfony </div>
-                    </div>
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar"
-                        style={{width: '90%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Django </div>
-                    </div>
-
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar"
-                        style={{width: '85%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > Solidity </div>
-                    </div>
-
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar"
-                        style={{width: '70%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > SQL / MySql </div>
-                    </div>
-
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar"
-                        style={{width: '40%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > React Native </div>
-                    </div>
-
-                    <div className="progress" style={{height:'30px'}}>
-                        <div className="progress-bar" role="progressbar"
-                        style={{width: '30%', backgroundColor: '#39ff14', color: '#141C3A', fontWeight: 'bold'}}  > C# .Net </div>
                     </div>
                 </div>
             </div>

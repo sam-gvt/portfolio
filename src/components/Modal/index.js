@@ -8,30 +8,6 @@ const ModalProject = ({indexModal, removeModal}) => {
 
     const infosModal = [
         {
-            title : 'Instagram copy',
-            techno : ['Tailwind Css'],
-            features : [
-                'mobile adapter',
-                'showcase site'
-            ],
-            img : [
-                'imgInsta1',
-                'imgInsta3',
-                'imgInsta3',
-            ]
-        },
-        {
-            title : 'Tesla copy',
-            techno : ['Tailwind Css'],
-            features : [
-                'mobile adapter',
-                'showcase site'
-            ],
-            img : [
-                'imgTesla'
-            ]
-        },
-        {
             title : 'Web3 Democratic vote',
             techno : ['Solidity', 'NextJS', 'ChakraUi', 'Wagmi' ],
             features : [
@@ -41,7 +17,7 @@ const ModalProject = ({indexModal, removeModal}) => {
                 'Change workflow status',
                 'Send proposals',
                 'Vote for a proposal',
-                'Get the winning proposal'  
+                'Get the winning proposal'
             ],
             img : [
                 'imgConnectWalletVote',
@@ -52,10 +28,10 @@ const ModalProject = ({indexModal, removeModal}) => {
             title : 'Web3 Dao charitable donation',
             techno : ['Solidity', 'NextJS', 'ChakraUi', 'Wagmi' ],
             features : [
-                'Project in Development...',  
+                'Project in Development...',
             ],
             img : [
-                
+
             ]
         },
         {
@@ -126,16 +102,16 @@ const ModalProject = ({indexModal, removeModal}) => {
         } else {
             setIndexImage(0)
         }
-        
+
     }
 
     return (
-    
+
       <Modal
         size="lg"
         show={true}
         onHide={() => removeModal(false)}
-        
+
       >
         <Modal.Header closeButton style={{backgroundColor:'#f8f8f8'}}>
           <Modal.Title>
@@ -150,11 +126,11 @@ const ModalProject = ({indexModal, removeModal}) => {
                         <button onClick={handleClick} className="btn btn-md btn-custom"  style={{backgroundColor:'none',border:'2px solid black', fontWeight:'bold'}}>
                         Next image
                         <img src={fleche} alt="Image SVG" />
-                    </button> 
+                    </button>
                     )}
-                    
+
                 </div>
-               
+
                 <Container>
                 <Row>
                 <Col md={4}>
@@ -187,7 +163,7 @@ const ModalProject = ({indexModal, removeModal}) => {
             </Container>
         </Modal.Body>
       </Modal>
-    
+
   );
 }
 
