@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 const ErrorPage = () => {
-    
+
     const centerh2 = {
         textAlign : 'center',
         color : '#141c3a',
@@ -14,14 +14,14 @@ const ErrorPage = () => {
 
         <div className="containerError">
             <h1 style={centerh2}>
-                404, page introuvable.
+                404, page not found.
             </h1>
             <div className="imgError" />
             <Link to='/'  style={{textDecoration:'none', color:'#ffffff'}}>
                 <div className='errorBtn' style={{backgroundColor:'#141C3A'}}> Retour au portfolio </div>
-            </Link> 
-        </div> 
-    
+            </Link>
+        </div>
+
     );
 }
 

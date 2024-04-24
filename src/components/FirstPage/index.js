@@ -45,7 +45,12 @@ const FirstPage = () => {
             <div className="presentation">
                 <h2 className="presentationTitle">Hi, I'm Sam</h2>
                 <p>
-                Passionate about Web application development, I'm constantly working to improve my skills.                </p>
+
+After studying IT and working on several personal projects,
+I ultimately chose to specialize in web development using the Django web framework,
+which I find incredibly powerful. I have a strong foundation in web development and
+thoroughly enjoy expanding my knowledge through courses, books, and personal projects.
+                </p>
             </div>
 
             <div className="skills" >
